@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+.ff {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+  }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.header {
+    padding: 0px;
+    text-align: center;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom left, #3F4F72, #071C48);
+    color: white; 
+}
+.header h1 {
+    font-size: 40px;
+}
+/*sticky menu bar from w3*/
+.navbar {
+    overflow: hidden;
+    background-color:#333;
+    position: sticky;
+    /*The box's position is calculated according to the normal flow. Then the box is offset relative to its flow root and containing block and in all cases, including table elements, does not affect the position of any following boxes.*/
+    position: -webkit-sticky;
+    top: 0;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding:  14px 20px;
+    text-decoration: none;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+.row {
+    /*The element lays out its contents using flow layout (block-and-inline layout). Standardized as 'flex'.*/
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+.nerf {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+div.fixed {
+  padding:  14px 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+  font-size: 16px;
+  display: block;
+}
+.rotate-image {
+  transform: rotate(30px);
+  margin-top:20px
+}
+.rotate-image-the-other-way {
+  transform: rotate(30px);
+  margin-top:10px
+}
